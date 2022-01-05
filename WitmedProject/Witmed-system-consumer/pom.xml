@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                                 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>Witmed-registry</artifactId>
-	<!-- 设置打包方式为 jar -->
+	<artifactId>Witmed-system-consumer</artifactId>
+	<!-- 设置项目的打包方式为 jar -->
 	<packaging>jar</packaging>
 
 	<!-- 配置使用 Witmed Parent 作为项目父级依赖 [BEGIN] -->
@@ -17,11 +17,12 @@
 	<!-- 配置使用 Witmed Parent 作为项目父级依赖 [END] -->
 
 	<dependencies>
-		<!-- 配置 Spring Cloud Starter Netflix Eureka Server 依赖 [BEGIN] -->
+		<!-- 配置 Witmed Commons 依赖 [BEGIN] -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<groupId>com.whackon.witmed</groupId>
+			<artifactId>Witmed-commons</artifactId>
+			<version>${parent.version}</version>
 		</dependency>
-		<!-- 配置 Spring Cloud Starter Netflix Eureka Server 依赖 [END] -->
+		<!-- 配置 Witmed Commons 依赖 [END] -->
 	</dependencies>
 </project>
